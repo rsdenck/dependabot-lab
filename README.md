@@ -1,3 +1,5 @@
+![Dependabot Status](https://img.shields.io/badge/Dependabot-enabled-success?style=flat-square&logo=dependabot)
+
 # Secure your Repository&#39;s Supply Chain
 
 <img src="https://octodex.github.com/images/Professortocat_v2.png" align="right" height="200px" />
