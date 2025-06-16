@@ -1,6 +1,20 @@
 version: 2
 updates:
-  - package-ecosystem: "github-actions"
-    directory: "/"
+  - package-ecosystem: "npm"
+    directory: "/" # Local do package.json
     schedule:
-      interval: "monthly"
+      interval: "daily"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "fix"
+    rebase-strategy: "auto"
+    ignore:
+      - dependency-name: "chalk"
+        versions: ["4.x.x"] # Exemplo de ignorar versão específica
+
+  - package-ecosystem: "github-actions"
+    directory: "/" 
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "deps"
